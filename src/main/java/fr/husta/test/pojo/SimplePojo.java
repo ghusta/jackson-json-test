@@ -4,10 +4,13 @@ import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 import org.joda.time.LocalDateTime;
 
+import java.util.Date;
+
 public class SimplePojo {
 
     private String name;
     private int age;
+    private Date oldDate;
     private LocalDate dob;
     private LocalDateTime timestamp;
     private DateTime timestampWithTimezone;
@@ -29,6 +32,14 @@ public class SimplePojo {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Date getOldDate() {
+        return oldDate;
+    }
+
+    public void setOldDate(Date oldDate) {
+        this.oldDate = oldDate;
     }
 
     public LocalDate getDob() {

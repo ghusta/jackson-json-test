@@ -11,6 +11,8 @@ import org.joda.time.LocalDateTime;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Date;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class MapperTest {
@@ -34,6 +36,7 @@ public class MapperTest {
         String jsonString;
         SimplePojo testPojo = new SimplePojo();
         testPojo.setName("test-1");
+        testPojo.setOldDate(new Date());
         testPojo.setDob(new LocalDate(1975, 8, 31));
         testPojo.setTimestamp(LocalDateTime.now());
         testPojo.setTimestampWithTimezone(DateTime.now());
