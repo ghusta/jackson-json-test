@@ -1,4 +1,4 @@
-package fr.husta.test.jackson.daatbind.ser.std;
+package fr.husta.test.jackson.databind.ser.std;
 
 import com.fasterxml.jackson.databind.ser.std.RawSerializer;
 
